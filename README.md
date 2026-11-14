@@ -10,10 +10,10 @@ Rainline, выпуск 0.1. Minecraft 1.20.1, Forge 47.4.10, Java 17. На Curse
 
 ```powershell
 python tools/workspace_storage.py --check
-python -B tools/PackData/CurseForge/prepare.py --project-id 1712767 --file-id 9001599 --client-archive $authorZip --expect LocalSources/Escape-The-End/tools/upstream-client-lock.json --java-major 17 --placements LocalSources/Escape-The-End/tools/curseforge-placements.json --pack-source LocalSources/Escape-The-End --output $stage
+python -B tools/PackData/CurseForge/prepare.py --project-id 1712767 --file-id 9001599 --client-archive $authorZip --expect LocalSources/Escape-The-End/tools/upstream-lock.json --java-major 17 --placements LocalSources/Escape-The-End/tools/curseforge-placements.json --pack-source LocalSources/Escape-The-End --output $stage
 ```
 
-Исходный lock содержит 147 обязательных зависимостей и хеши 1222 авторских файлов. Конфиги, задания, скрипты Rainline и те же девять ZIP‑зависимостей проверяются в отдельных папках стенда. В сборке закреплены параметры открытия мира и журналирования. `options.txt` не входит в список принудительно обновляемых файлов. Русский язык при первом запуске задаёт общий механизм лаунчера.
+Исходный lock содержит 147 обязательных зависимостей и хеши 1222 авторских файлов. Полный lock дополнительно закрепляет скачанные файлы и слой интеграции. Этот слой сохраняет параметры мира при открытии для сети и добавляет журналирование сетевых исключений. `options.txt` не входит в список принудительно обновляемых файлов. Русский язык при первом запуске задаёт общий механизм лаунчера, тексты авторских заданий остаются на английском.
 
 ## Приёмка и публикация
 

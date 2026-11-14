@@ -1184,6 +1184,62 @@
     "version": "47.4.10"
   },
   "minecraftVersion": "1.20.1",
+  "baselineNativeModList": {
+    "excludedPlatformIds": [
+      "forge",
+      "minecraft"
+    ],
+    "packModCount": 148,
+    "rawSha256": "fd799ae260a66d0c1517e5e9c69147d536d819d4f017c9db12c054ede728ff85",
+    "selectedNestedSources": {
+      "expandability": {
+        "member": "META-INF/jars/expandability-forge-9.0.4.jar",
+        "outerJar": "mods/artifacts-forge-9.5.19.jar",
+        "sha256": "0977c531a648319c2632384fe7771a14cf93b6485351cfb2c4f9fd20fbfdd590",
+        "version": "9.0.4"
+      },
+      "kotlinforforge": {
+        "member": "META-INF/jarjar/kffmod-4.12.0.jar",
+        "outerJar": "mods/kotlinforforge-4.12.0-all.jar",
+        "sha256": "007d01bead461011be3774a3edf858314e0324023270f06d008834a7a404ee71",
+        "version": "4.12.0"
+      },
+      "kuma_api": {
+        "member": "META-INF/jarjar/kuma-api-forge-20.1.12+1.20.1.jar",
+        "outerJar": "mods/balm-forge-1.20.1-7.3.38-all.jar",
+        "sha256": "5118a4d1ce2bb836158184887002c7aec7d723a56da5185a0c5b08f9c5cc4767",
+        "version": "20.1.12"
+      },
+      "mixinsquared": {
+        "member": "META-INF/jarjar/mixinsquared-forge-0.1.2-beta.6.jar",
+        "outerJar": "mods/elytraslot-forge-6.4.4+1.20.1.jar",
+        "sha256": "0bb821a05928e6ecb9120296c51cae22d1028998b73217cb93a4332d1ae47cb1",
+        "version": "0.1.2-beta.6"
+      },
+      "spectrelib": {
+        "member": "META-INF/jarjar/spectrelib-forge-0.13.17+1.20.1.jar",
+        "outerJar": "mods/polymorph-forge-0.49.10+1.20.1.jar",
+        "sha256": "0e2b29d9a55eeaf6196b284b4a964f917254c4102152c328bf82f58b52ade389",
+        "version": "0.13.17+1.20.1"
+      },
+      "xaerolib": {
+        "member": "META-INF/jarjar/xaerolib-forge-1.20.1-1.1.15.jar",
+        "outerJar": "mods/xaeroworldmap-forge-1.20.1-1.40.16.jar",
+        "sha256": "7db4435601faa28ad76f40a35a990232cb9cb683aeb0b9907a7f30ef6f7d2a14",
+        "version": "1.1.15"
+      },
+      "yet_another_config_lib_v3": {
+        "member": "META-INF/jarjar/yet-another-config-lib-3.6.6+1.20.1-forge.jar",
+        "outerJar": "mods/fragmentum-forge-1.20.1-1.3.0.jar",
+        "sha256": "57bc01c404da864cce52d92edc40ec92447133b91bd8a547f4e6ae51eb4b9fe8",
+        "version": "3.6.6+1.20.1-forge"
+      }
+    },
+    "staticCandidatesNotInModList": [
+      "mixinextras"
+    ],
+    "totalCount": 150
+  },
   "nestedModPageCandidates": {
     "expandability": {
       "sources": [

@@ -3,5 +3,23 @@
   "relativePath": "Escape The End",
   "name": "Escape The End",
   "summary": "Выживание на дальних островах Края с заданиями, боссами и путешествиями между измерениями.",
-  "description": "Начните на дальних островах Края. Исследуйте острова, выполняйте задания и побеждайте боссов, чтобы открывать новые измерения и добраться до Верхнего мира. Откройте журнал заданий клавишей G, чтобы узнать, что делать дальше."
+  "description": "Начните на дальних островах Края. Исследуйте острова, выполняйте задания и побеждайте боссов, чтобы открывать новые измерения и добраться до Верхнего мира. Откройте журнал заданий клавишей G, чтобы узнать, что делать дальше.",
+  "libraryIds": [
+    "bclib", "commonnetworking", "elysium_api", "fragmentum", "itemfilters", "kuma_api",
+    "libraryferret", "mossylib", "spectrelib", "wunderlib", "xaerolib"
+  ],
+  "parents": {
+    "drippyloadingscreen": "fancymenu",
+    "emi_enchanting": "emi",
+    "emi_loot": "emi",
+    "emidelight": "emi",
+    "emiffect": "emi",
+    "emiprofessions": "emi",
+    "emitrades": "emi",
+    "endersdelight": "farmersdelight",
+    "formationsnether": "formations",
+    "jadensnetherexpansiondelight": "farmersdelight",
+    "nethersdelight": "farmersdelight",
+    "spiffyhud": "fancymenu"
+  }
 }

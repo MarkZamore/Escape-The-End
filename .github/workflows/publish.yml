@@ -88,3 +88,12 @@ jobs:
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release"/assets/*
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release/pack-manifest.json"
           gh release edit pack-latest --repo "$GITHUB_REPOSITORY" --draft=false
+      - name: Download and verify every public asset
+        env:
+          PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
+        shell: bash
+        run: |
+          set -euo pipefail
+          run="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release"
+          python3 -B tools/verify_public_assets.py --expected-manifest "$run/release/pack-manifest.json" \
+            --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run"

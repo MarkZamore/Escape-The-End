@@ -13,6 +13,10 @@
   ],
   "authorArchiveSha256": "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294",
   "descriptorSha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
+  "excludedDependencies": [
+    {"projectId": 849519, "fileId": 8281128},
+    {"projectId": 387365, "fileId": 4776657}
+  ],
   "patches": [],
   "schemaVersion": 1
 }

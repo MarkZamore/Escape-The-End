@@ -2538,12 +2538,28 @@
       "sha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
       "sizeBytes": 188
     },
+    "excludedDependencies": [
+      {
+        "fileId": 8281128,
+        "path": "mods/e4mc-forge-6.2.0.jar",
+        "projectId": 849519,
+        "sha256": "421695a5bd896ed515f53760f71ef5bbb399a2bfb18c2b46523b6f9a63c62169",
+        "sizeBytes": 1296543
+      },
+      {
+        "fileId": 4776657,
+        "path": "mods/lanserverproperties-1.11.1-forge.jar",
+        "projectId": 387365,
+        "sha256": "dd59193804b778cf8d42284695b325d945150e4a973fb04e961fcd8b0c807b89",
+        "sizeBytes": 44387
+      }
+    ],
     "ownership": {
       "sha256": "20b244ac6cfb89d344b37b9ac4d077bd368f5f0ac391541801d06b22464313b5",
       "sizeBytes": 18
     },
     "patches": [],
-    "recipeSha256": "0bdab066a9d76c955c8145515b5e243b664b643247a2e6e303a5679d72cd11c3",
+    "recipeSha256": "230978b6f0b2c3d6c2faef8d9c86db04aa54868be76ca24c1085f71357d06f76",
     "requiredLauncherFeatures": [
       "preserve-steam-world-settings-v1"
     ]

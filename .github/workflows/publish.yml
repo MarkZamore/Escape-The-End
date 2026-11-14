@@ -7,6 +7,10 @@ on:
         description: Verify author download and packing prerequisites without publishing
         type: boolean
         default: false
+      verify_revision:
+        description: Verify an already published revision on the Windows runner
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -17,6 +21,7 @@ concurrency:
 
 jobs:
   publish:
+    if: ${{ inputs.verify_revision == '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 35
     env:
@@ -111,12 +116,14 @@ jobs:
 
   verify-public-install:
     needs: publish
-    if: ${{ !inputs.prepare_only }}
+    if: ${{ always() && !inputs.prepare_only && (needs.publish.result == 'success' || (needs.publish.result == 'skipped' && inputs.verify_revision != '')) }}
     runs-on: windows-latest
     timeout-minutes: 35
     env:
       LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
       LAUNCHER_SHA256: 5664970d24192d2c8513b4bed52ed07881a9ddae26f6adf87df228162c54eacf
+      APPROVED_REVISION: ${{ inputs.verify_revision || github.sha }}
+      PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
     steps:
       - uses: actions/checkout@v4
         with:
@@ -154,7 +161,8 @@ jobs:
           $uri = "https://github.com/$env:GITHUB_REPOSITORY/releases/download/pack-latest/pack-manifest.json"
           Invoke-WebRequest -Uri $uri -OutFile $expected
           $manifest = Get-Content -Raw -LiteralPath $expected | ConvertFrom-Json
-          if ($manifest.revision -cne $env:GITHUB_SHA -or $manifest.packId -cne 'minecraft-20') {
+          if ($env:APPROVED_REVISION -cnotmatch '^[0-9a-f]{40}$' -or `
+              $manifest.revision -cne $env:APPROVED_REVISION -or $manifest.packId -cne 'minecraft-20') {
               throw 'Public manifest changed after the release job.'
           }
           & "$launcher/tools/PackData/CurseForge/Verify-PublicPack.ps1" -RunDirectory $run -Label stock `

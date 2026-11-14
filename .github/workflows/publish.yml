@@ -1,0 +1,90 @@
+name: Escape The End
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: escape-the-end-pack-latest
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PACK_ID: minecraft-20
+      LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MarkZamore/LANMinecraft
+          ref: ${{ env.LAUNCHER_SOURCE }}
+          path: launcher-tools
+          persist-credentials: false
+      - name: Prepare and verify the complete pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          pack="$GITHUB_WORKSPACE"
+          cd launcher-tools
+          python3 -B tools/workspace_storage.py --check
+          run="$PWD/artifacts/agent-runs/escape-the-end-release"
+          mkdir -p "$run"
+          python3 - "$run/RUN.json" <<'PY'
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          import json
+          import sys
+
+          now = datetime.now(timezone.utc)
+          Path(sys.argv[1]).write_text(json.dumps({
+              "owner": "Escape The End release workflow",
+              "purpose": "Locked author stage and GitHub Release assets",
+              "createdUtc": now.isoformat(),
+              "maximumBytes": 2 * 1024**3,
+              "deleteAfterUtc": (now + timedelta(days=1)).isoformat(),
+              "requiredResults": ["release/pack-manifest.json"],
+          }), encoding="utf-8")
+          PY
+          author="$run/escape-the-end.zip"
+          curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' \
+            --max-time 180 --retry 2 --max-filesize 60449095 --output "$author" \
+            'https://edge.forgecdn.net/files/9001/599/Escape%20The%20End-0.1.zip'
+          echo "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294  $author" | sha256sum --check
+          python3 -B "$pack/tools/network_logging_policy.py" verify --pack "$pack"
+          python3 -B tools/PackData/CurseForge/release_overlay.py stage --pack-source "$pack" \
+            --locked --client-archive "$author" --output "$run/stage"
+          python3 -B tools/PackData/CurseForge/stage_release.py --pack-source "$pack" \
+            --stage "$run/stage" --revision "$GITHUB_SHA" --id "$PACK_ID" --output "$run/release"
+          python3 -B tools/PackData/CurseForge/release_overlay.py verify --pack-source "$pack" \
+            --stage "$run/stage" --manifest "$run/release/pack-manifest.json"
+          sha256sum "$run/release/pack-manifest.json"
+      - name: Publish the verified first release
+        shell: bash
+        run: |
+          set -euo pipefail
+          release="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release/release"
+          notes="$RUNNER_TEMP/escape-release-notes.md"
+          {
+            echo 'Escape The End 0.1 от Rainline для Minecraft 1.20.1, Forge 47.4.10 и Java 17.'
+            echo
+            echo "Исходники и квитанции сборки доступны в [ревизии $GITHUB_SHA](https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA)."
+            echo
+            echo '[Авторский выпуск Escape The End](https://www.curseforge.com/minecraft/modpacks/escape-the-end/files/9001599)'
+            if [[ -f NOTICE.md ]]; then
+              echo
+              cat NOTICE.md
+            fi
+          } > "$notes"
+          gh release create pack-latest --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --draft --title 'Escape The End' --notes-file "$notes"
+          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release"/assets/*
+          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release/pack-manifest.json"
+          gh release edit pack-latest --repo "$GITHUB_REPOSITORY" --draft=false

@@ -1,0 +1,31 @@
+{
+  "author": "Rainline",
+  "authorArchiveSha256": "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294",
+  "fileUrl": "https://www.curseforge.com/minecraft/modpacks/escape-the-end/files/9001599",
+  "preview": {
+    "height": 720,
+    "sha256": "44fcae92ed2205c8ce3d3dbafde9655e33758a099e603189a3fbc3c79536fd61",
+    "sizeBytes": 215389,
+    "width": 1280
+  },
+  "projectUrl": "https://www.curseforge.com/minecraft/modpacks/escape-the-end",
+  "schemaVersion": 1,
+  "source": {
+    "archivePath": "overrides/config/fancymenu/panoramas/mypanorama/panorama/panorama_3.png",
+    "height": 1536,
+    "references": [
+      "overrides/config/fancymenu/customization/title_screen_layout.txt"
+    ],
+    "sha256": "42f3ef9baed7be7e2d8dd544c6a149dd2baef365793c32b3e58ca1a79df106b9",
+    "sizeBytes": 2769996,
+    "width": 1536
+  },
+  "transformation": {
+    "format": "JPEG",
+    "method": "center crop and Lanczos resize",
+    "optimize": true,
+    "pillowVersion": "12.3.0",
+    "quality": 92,
+    "subsampling": 0
+  }
+}

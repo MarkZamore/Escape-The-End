@@ -86,6 +86,9 @@ jobs:
           gh release create pack-latest --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
             --draft --title 'Escape The End' --notes-file "$notes"
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release"/assets/*
+          if [[ -f NOTICE.md ]]; then
+            gh release upload pack-latest --repo "$GITHUB_REPOSITORY" NOTICE.md
+          fi
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release/pack-manifest.json"
           gh release edit pack-latest --repo "$GITHUB_REPOSITORY" --draft=false
       - name: Download and verify every public asset
@@ -95,5 +98,61 @@ jobs:
         run: |
           set -euo pipefail
           run="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release"
+          extra=()
+          if [[ -f NOTICE.md ]]; then extra+=(--extra-asset NOTICE.md); fi
           python3 -B tools/verify_public_assets.py --expected-manifest "$run/release/pack-manifest.json" \
-            --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run"
+            --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run" "${extra[@]}"
+
+  verify-public-install:
+    needs: publish
+    runs-on: windows-latest
+    timeout-minutes: 35
+    env:
+      LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
+      LAUNCHER_SHA256: 5664970d24192d2c8513b4bed52ed07881a9ddae26f6adf87df228162c54eacf
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MarkZamore/LANMinecraft
+          ref: ${{ env.LAUNCHER_SOURCE }}
+          path: launcher-tools
+          persist-credentials: false
+      - name: Install from GitHub using the public launcher 500
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $ProgressPreference = 'SilentlyContinue'
+          $launcher = Join-Path $env:GITHUB_WORKSPACE 'launcher-tools'
+          $run = Join-Path $launcher 'artifacts/agent-runs/escape-the-end-public'
+          [void][IO.Directory]::CreateDirectory($run)
+          @{
+            owner = 'Escape The End release workflow'
+            purpose = 'Clean production installation from public release'
+            createdUtc = (Get-Date).ToUniversalTime().ToString('o')
+            maximumBytes = 2GB
+            deleteAfterUtc = (Get-Date).ToUniversalTime().AddDays(1).ToString('o')
+            requiredResults = @('stock/public-acceptance.json')
+          } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $run 'RUN.json')
+          $exe = Join-Path $run 'LANMinecraft.exe'
+          $expected = Join-Path $run 'candidate-manifest.json'
+          $managed = Join-Path $run 'managed'
+          curl.exe --fail --silent --show-error --location --proto '=https' --proto-redir '=https' --max-time 180 `
+            --output $exe 'https://github.com/MarkZamore/LANMinecraft/releases/download/latest/LANMinecraft.exe'
+          if ($LASTEXITCODE) { throw 'Could not download the public launcher.' }
+          python -B tools/extract_public_launcher_dlls.py --exe $exe --sha256 $env:LAUNCHER_SHA256 --output $managed
+          if ($LASTEXITCODE) { throw 'Public launcher bytes do not match the approved release.' }
+          $uri = "https://github.com/$env:GITHUB_REPOSITORY/releases/download/pack-latest/pack-manifest.json"
+          Invoke-WebRequest -Uri $uri -OutFile $expected
+          $manifest = Get-Content -Raw -LiteralPath $expected | ConvertFrom-Json
+          if ($manifest.revision -cne $env:GITHUB_SHA -or $manifest.packId -cne 'minecraft-20') {
+              throw 'Public manifest changed after the release job.'
+          }
+          & "$launcher/tools/PackData/CurseForge/Verify-PublicPack.ps1" -RunDirectory $run -Label stock `
+            -LauncherAssembly "$managed/LANMinecraft.dll" -ExpectedManifest $expected `
+            -Owner MarkZamore -Repository Escape-The-End -Tag pack-latest -PackName 'Escape The End' `
+            -RunOwner 'Escape The End release workflow'
+          $receiptPath = Join-Path $run 'stock/public-acceptance.json'
+          Write-Output ('LANMC_PUBLIC_ACCEPTANCE_V1 ' + [Convert]::ToBase64String([IO.File]::ReadAllBytes($receiptPath)))

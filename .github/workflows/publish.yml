@@ -2,6 +2,11 @@ name: Escape The End
 
 on:
   workflow_dispatch:
+    inputs:
+      prepare_only:
+        description: Verify author download and packing prerequisites without publishing
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -61,12 +66,14 @@ jobs:
           python3 -B "$pack/tools/network_logging_policy.py" verify --pack "$pack"
           python3 -B tools/PackData/CurseForge/release_overlay.py stage --pack-source "$pack" \
             --locked --client-archive "$author" --output "$run/stage"
+          if [[ '${{ inputs.prepare_only }}' == 'true' ]]; then exit 0; fi
           python3 -B tools/PackData/CurseForge/stage_release.py --pack-source "$pack" \
             --stage "$run/stage" --revision "$GITHUB_SHA" --id "$PACK_ID" --output "$run/release"
           python3 -B tools/PackData/CurseForge/release_overlay.py verify --pack-source "$pack" \
             --stage "$run/stage" --manifest "$run/release/pack-manifest.json"
           sha256sum "$run/release/pack-manifest.json"
       - name: Publish the verified first release
+        if: ${{ !inputs.prepare_only }}
         shell: bash
         run: |
           set -euo pipefail
@@ -86,25 +93,25 @@ jobs:
           gh release create pack-latest --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
             --draft --title 'Escape The End' --notes-file "$notes"
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release"/assets/*
-          if [[ -f NOTICE.md ]]; then
-            gh release upload pack-latest --repo "$GITHUB_REPOSITORY" NOTICE.md
-          fi
+          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" NOTICE.md licenses/*.txt
           gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release/pack-manifest.json"
           gh release edit pack-latest --repo "$GITHUB_REPOSITORY" --draft=false
       - name: Download and verify every public asset
+        if: ${{ !inputs.prepare_only }}
         env:
           PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
         shell: bash
         run: |
           set -euo pipefail
           run="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release"
-          extra=()
-          if [[ -f NOTICE.md ]]; then extra+=(--extra-asset NOTICE.md); fi
+          extra=(--extra-asset NOTICE.md)
+          for license in licenses/*.txt; do extra+=(--extra-asset "$license"); done
           python3 -B tools/verify_public_assets.py --expected-manifest "$run/release/pack-manifest.json" \
             --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run" "${extra[@]}"
 
   verify-public-install:
     needs: publish
+    if: ${{ !inputs.prepare_only }}
     runs-on: windows-latest
     timeout-minutes: 35
     env:

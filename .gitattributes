@@ -1,0 +1,2 @@
+* text=auto eol=lf
+config/log4j2.xml -text

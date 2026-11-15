@@ -208,6 +208,16 @@
       "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
     }
   ],
+  "controlsPreset": {
+    "input": {
+      "sha256": "3039a05e63fd95063e4c95c6f2242911237ee80a155f213e77c8e4005b9f2e7c",
+      "sizeBytes": 8112
+    },
+    "output": {
+      "sha256": "a10c810f59ef2a9156e510b7225896f07569529fcbf864aad43fd57a171732bc",
+      "sizeBytes": 5326
+    }
+  },
   "descriptorSha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
   "excludedDependencies": [
     {

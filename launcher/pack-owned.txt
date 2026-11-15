@@ -14,3 +14,4 @@ config/ftbquests/quests/data.snbt
 config/log4j2.xml
 kubejs/assets/escape_end_quests/lang/en_us.json
 kubejs/assets/escape_end_quests/lang/ru_ru.json
+launcher/controls-preset.txt

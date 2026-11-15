@@ -27,7 +27,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       PACK_ID: minecraft-20
-      LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
+      LAUNCHER_SOURCE: 5b858b554e7d43d1e436d899164f06b1db187b54
     steps:
       - uses: actions/checkout@v4
         with:
@@ -70,6 +70,7 @@ jobs:
           echo "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294  $author" | sha256sum --check
           python3 -B "$pack/tools/network_logging_policy.py" verify --pack "$pack"
           python3 -B "$pack/tools/localize_quests.py" verify "$author"
+          python3 -B "$pack/tools/keybinds/check_preset.py" --author-archive "$author"
           python3 -B tools/PackData/CurseForge/release_overlay.py stage --pack-source "$pack" \
             --locked --client-archive "$author" --output "$run/stage"
           if [[ '${{ inputs.prepare_only }}' == 'true' ]]; then exit 0; fi
@@ -90,6 +91,7 @@ jobs:
             echo 'Escape The End 0.1 от Rainline для Minecraft 1.20.1, Forge 47.4.10 и Java 17.'
             echo
             echo 'Выберите русский язык в настройках Minecraft, чтобы читать квестбук FTB Quests на русском.'
+            echo 'Раскладка клавиш доступна через кнопку «Пресет управления» в LANMinecraft.'
             echo
             echo "Исходники и квитанции сборки доступны в [ревизии $GITHUB_SHA](https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA)."
             echo
@@ -121,7 +123,7 @@ jobs:
     timeout-minutes: 35
     env:
       LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
-      LAUNCHER_SHA256: 5664970d24192d2c8513b4bed52ed07881a9ddae26f6adf87df228162c54eacf
+      LAUNCHER_SHA256: 74e30ce982054e0937d2f3964731ccceee877f95eaf007e19d132244fcb84bb1
       APPROVED_REVISION: ${{ inputs.verify_revision || github.sha }}
       PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
     steps:
@@ -134,7 +136,7 @@ jobs:
           ref: ${{ env.LAUNCHER_SOURCE }}
           path: launcher-tools
           persist-credentials: false
-      - name: Install from GitHub using the public launcher 500
+      - name: Install from GitHub using the public launcher
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'

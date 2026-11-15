@@ -2730,6 +2730,16 @@
         "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
       }
     ],
+    "controlsPreset": {
+      "input": {
+        "sha256": "3039a05e63fd95063e4c95c6f2242911237ee80a155f213e77c8e4005b9f2e7c",
+        "sizeBytes": 8112
+      },
+      "output": {
+        "sha256": "a10c810f59ef2a9156e510b7225896f07569529fcbf864aad43fd57a171732bc",
+        "sizeBytes": 5326
+      }
+    },
     "descriptor": {
       "sha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
       "sizeBytes": 188
@@ -2751,8 +2761,8 @@
       }
     ],
     "ownership": {
-      "sha256": "24ec3f6766b4c1c20dff0da085e301dfd3c7a895ea6ad0667e62c5f557d9b449",
-      "sizeBytes": 773
+      "sha256": "1c635fd7aadabac00e5b85ededb10f7f5f99ccefe068099410b78bd0d7a74758",
+      "sizeBytes": 802
     },
     "patches": [
       {
@@ -2899,7 +2909,7 @@
         "path": "config/ftbquests/quests/data.snbt"
       }
     ],
-    "recipeSha256": "c6f948af9289638bf9bf3dcad4cc4764cc06e3df2c0d3d4c38b5a9db0e33966c",
+    "recipeSha256": "c7b148c88d869abe146e1c254eb228838f867c7b6b888d1c8f078c351cfe84f2",
     "requiredLauncherFeatures": [
       "preserve-steam-world-settings-v1"
     ]

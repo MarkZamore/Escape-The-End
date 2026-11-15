@@ -121,7 +121,8 @@ def release_assets(repository, tag, revision):
     raise ValueError("Release has more than 3999 assets")
 
 
-def verify(manifest, manifest_name, manifest_pin, extras, public, receive, scratch, pack_path, limit):
+def verify(manifest, manifest_name, manifest_pin, extras, public, receive, scratch, pack_path, limit,
+           *, allow_previous_assets=False):
     descriptor = None
     files = {}
     paths = {}
@@ -148,6 +149,9 @@ def verify(manifest, manifest_name, manifest_pin, extras, public, receive, scrat
     library = manifest["library"]
     library_name = asset_name(library["name"])
     expected = {manifest_name: manifest_pin, library_name: pin(library, prepare.MAX_JSON), **game_assets, **extras}
+    if allow_previous_assets:
+        # Clients holding an earlier manifest can still fetch its content-addressed assets.
+        public = {name: row for name, row in public.items() if name in expected}
     prepare.require(len({name.casefold() for name in expected}) == len(game_assets) + len(extras) + 2 and
                     set(public) == set(expected), "Public release asset set differs from the approved inventory")
     for name, expected_pin in expected.items():
@@ -202,6 +206,8 @@ def main():
     parser.add_argument("--scratch", type=Path, required=True, help="Owned run directory for one temporary archive")
     parser.add_argument("--max-temp-bytes", type=int, default=128 * 1024 * 1024)
     parser.add_argument("--extra-asset", type=Path, action="append", default=[], help="Approved extra public asset")
+    parser.add_argument("--allow-previous-assets", action="store_true",
+                        help="Verify every asset for the selected revision while retaining previous assets")
     args = parser.parse_args()
     try:
         repository = "/".join(asset_name(part) for part in args.repository.split("/"))
@@ -232,7 +238,8 @@ def main():
             return prepare.open_official(url, ASSET_ORIGINS, "application/octet-stream")
 
         receipt = verify(manifest, "pack-manifest.json", prepare.fingerprint(raw_manifest), extras,
-                         public, receive, scratch, pack_path.as_posix(), args.max_temp_bytes)
+                         public, receive, scratch, pack_path.as_posix(), args.max_temp_bytes,
+                         allow_previous_assets=args.allow_previous_assets)
         print(json.dumps(receipt, ensure_ascii=False, indent=2))
     except (OSError, URLError, ValueError, KeyError, TypeError, RuntimeError, zipfile.BadZipFile) as error:
         parser.exit(1, f"{parser.prog}: {error}\n")

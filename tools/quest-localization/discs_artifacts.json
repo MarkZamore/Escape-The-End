@@ -1,0 +1,36 @@
+{
+  "chapters/artifacts.snbt": {
+    "Collect all 44 artifacts": "Соберите все 44 артефакта",
+    "Artifact Collection": "Коллекция артефактов",
+    "Artifacts": "Артефакты"
+  },
+  "chapters/music_discs_2.snbt": {
+    "Collect every music disc from the End": "Соберите все пластинки Края",
+    "Music Disc Collection": "Коллекция пластинок",
+    "13": "13",
+    "cat": "cat",
+    "blocks": "blocks",
+    "chirp": "chirp",
+    "far": "far",
+    "mall": "mall",
+    "mellohi": "mellohi",
+    "stal": "stal",
+    "strad": "strad",
+    "ward": "ward",
+    "11": "11",
+    "wait": "wait",
+    "otherside": "otherside",
+    "5": "5",
+    "pigstep": "Pigstep",
+    "relic": "Relic",
+    "Endseeker": "Endseeker",
+    "Eo Dracona": "Eo Dracona",
+    "Grasping at Stars": "Grasping at Stars",
+    "Strange and Alien": "Strange and Alien",
+    "Advance": "Продвигатель (Advance)",
+    "Obliterator": "Obliterator",
+    "Possessed Paladin": "Одержимый паладин (Collapsing Kingdom)",
+    "Abruption": "Abruption",
+    "Music Discs": "Пластинки"
+  }
+}

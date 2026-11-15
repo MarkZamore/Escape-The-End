@@ -26,3 +26,18 @@ python -B LocalSources/Escape-The-End/tools/build_loaded_inventory.py "$run/stag
 ```
 
 After freeing the discovery instance, pass `-SteamCandidate -NativeHost` with the same runner for a native title and host check. This uses the launcher's verified identity adapter and the shared `Forge118SteamQaAgent` to create a disposable world, open it through the ordinary native action and verify publication. The host check requires a signed-in Steam client and sufficient local memory. It does not exercise an incoming remote guest. Retain the small receipts and remove the disposable instance, native runtime view and raw diagnostic files.
+
+## Questbook locale
+
+```powershell
+pwsh -NoProfile -File LocalSources/Escape-The-End/tools/Run-QuestLocaleQa.ps1 -AuthorArchive $authorZip
+```
+
+PASS on Forge 47.4.10 / Java 17 with the official questbook, overlay SHA256
+`c6f948af9289638bf9bf3dcad4cc4764cc06e3df2c0d3d4c38b5a9db0e33966c` and the eight pinned
+FTB/KubeJS dependencies. The probe opened the FTB quest screen in a disposable world
+and switched `en_us → ru_ru → en_us` in the same session. It checked the book,
+chapter group, chapter, quest and task titles, subtitle, description, colored intro,
+an unchanged song title, and a supplemental Russian item name. The isolated
+language test uses the exact quest and resource loader versions. Full pack
+installation is verified separately in the release workflow.

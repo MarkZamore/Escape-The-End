@@ -2534,6 +2534,202 @@
         "sizeBytes": 44
       }
     ],
+    "bookLocalization": [
+      {
+        "inputs": {
+          "config/ftbquests/quests/chapter_groups.snbt": {
+            "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+            "sizeBytes": 256
+          },
+          "config/ftbquests/quests/chapters/0188F23907D5B573.snbt": {
+            "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+            "sizeBytes": 5409
+          },
+          "config/ftbquests/quests/chapters/2445868387220123.snbt": {
+            "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+            "sizeBytes": 8024
+          },
+          "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt": {
+            "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+            "sizeBytes": 10137
+          },
+          "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt": {
+            "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+            "sizeBytes": 8920
+          },
+          "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt": {
+            "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+            "sizeBytes": 1890
+          },
+          "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt": {
+            "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+            "sizeBytes": 25098
+          },
+          "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt": {
+            "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+            "sizeBytes": 11481
+          },
+          "config/ftbquests/quests/chapters/artifacts.snbt": {
+            "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+            "sizeBytes": 15690
+          },
+          "config/ftbquests/quests/chapters/escape_the_end.snbt": {
+            "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+            "sizeBytes": 6515
+          },
+          "config/ftbquests/quests/chapters/info.snbt": {
+            "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+            "sizeBytes": 1817
+          },
+          "config/ftbquests/quests/chapters/music_discs_2.snbt": {
+            "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+            "sizeBytes": 8724
+          },
+          "config/ftbquests/quests/data.snbt": {
+            "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+            "sizeBytes": 588
+          },
+          "mods/ftb-library-forge-2001.2.13.jar": {
+            "fileId": 8226927,
+            "projectId": 404465,
+            "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+            "sizeBytes": 780558
+          },
+          "mods/ftb-quests-forge-2001.4.22.jar": {
+            "fileId": 8078538,
+            "projectId": 289412,
+            "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+            "sizeBytes": 1255469
+          },
+          "mods/kubejs-forge-2001.6.5-build.26.jar": {
+            "fileId": 8020595,
+            "projectId": 238086,
+            "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+            "sizeBytes": 1658792
+          },
+          "mods/legendarymonsters-2.2.3 MC 1.20.1.jar": {
+            "fileId": 8902349,
+            "projectId": 944035,
+            "sha256": "a90a3009e502ba4f235e5bd9a7493c2307e4060f0ee21fd02e62f9893912321c",
+            "sizeBytes": 44954907
+          },
+          "mods/phantasm-1.1.3.jar": {
+            "fileId": 8174822,
+            "projectId": 565254,
+            "sha256": "c88a29b3e37f469cc0a9afb25f6eb5f42942f4ab3210773078bca2aa5bf2dbc3",
+            "sizeBytes": 7006500
+          },
+          "mods/waystones-forge-1.20.1-14.1.20.jar": {
+            "fileId": 7682270,
+            "projectId": 245755,
+            "sha256": "5ecc6535596b5954f6293224be6b35805c64f4d4aedc2b9e32d9508dd529cabd",
+            "sizeBytes": 533738
+          }
+        },
+        "output": {
+          "sha256": "3923640057cd8cfd4ab1f653d175146e6869ae260a022fd9f5ab51b85b7e0253",
+          "sizeBytes": 18405
+        },
+        "path": "kubejs/assets/escape_end_quests/lang/en_us.json"
+      },
+      {
+        "inputs": {
+          "config/ftbquests/quests/chapter_groups.snbt": {
+            "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+            "sizeBytes": 256
+          },
+          "config/ftbquests/quests/chapters/0188F23907D5B573.snbt": {
+            "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+            "sizeBytes": 5409
+          },
+          "config/ftbquests/quests/chapters/2445868387220123.snbt": {
+            "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+            "sizeBytes": 8024
+          },
+          "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt": {
+            "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+            "sizeBytes": 10137
+          },
+          "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt": {
+            "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+            "sizeBytes": 8920
+          },
+          "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt": {
+            "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+            "sizeBytes": 1890
+          },
+          "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt": {
+            "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+            "sizeBytes": 25098
+          },
+          "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt": {
+            "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+            "sizeBytes": 11481
+          },
+          "config/ftbquests/quests/chapters/artifacts.snbt": {
+            "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+            "sizeBytes": 15690
+          },
+          "config/ftbquests/quests/chapters/escape_the_end.snbt": {
+            "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+            "sizeBytes": 6515
+          },
+          "config/ftbquests/quests/chapters/info.snbt": {
+            "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+            "sizeBytes": 1817
+          },
+          "config/ftbquests/quests/chapters/music_discs_2.snbt": {
+            "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+            "sizeBytes": 8724
+          },
+          "config/ftbquests/quests/data.snbt": {
+            "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+            "sizeBytes": 588
+          },
+          "mods/ftb-library-forge-2001.2.13.jar": {
+            "fileId": 8226927,
+            "projectId": 404465,
+            "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+            "sizeBytes": 780558
+          },
+          "mods/ftb-quests-forge-2001.4.22.jar": {
+            "fileId": 8078538,
+            "projectId": 289412,
+            "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+            "sizeBytes": 1255469
+          },
+          "mods/kubejs-forge-2001.6.5-build.26.jar": {
+            "fileId": 8020595,
+            "projectId": 238086,
+            "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+            "sizeBytes": 1658792
+          },
+          "mods/legendarymonsters-2.2.3 MC 1.20.1.jar": {
+            "fileId": 8902349,
+            "projectId": 944035,
+            "sha256": "a90a3009e502ba4f235e5bd9a7493c2307e4060f0ee21fd02e62f9893912321c",
+            "sizeBytes": 44954907
+          },
+          "mods/phantasm-1.1.3.jar": {
+            "fileId": 8174822,
+            "projectId": 565254,
+            "sha256": "c88a29b3e37f469cc0a9afb25f6eb5f42942f4ab3210773078bca2aa5bf2dbc3",
+            "sizeBytes": 7006500
+          },
+          "mods/waystones-forge-1.20.1-14.1.20.jar": {
+            "fileId": 7682270,
+            "projectId": 245755,
+            "sha256": "5ecc6535596b5954f6293224be6b35805c64f4d4aedc2b9e32d9508dd529cabd",
+            "sizeBytes": 533738
+          }
+        },
+        "output": {
+          "sha256": "c7aec4703db0492696a165bd485a6e9b669d655b06aa09f0bca548822065b4f3",
+          "sizeBytes": 22938
+        },
+        "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
+      }
+    ],
     "descriptor": {
       "sha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
       "sizeBytes": 188
@@ -2555,11 +2751,155 @@
       }
     ],
     "ownership": {
-      "sha256": "20b244ac6cfb89d344b37b9ac4d077bd368f5f0ac391541801d06b22464313b5",
-      "sizeBytes": 18
+      "sha256": "24ec3f6766b4c1c20dff0da085e301dfd3c7a895ea6ad0667e62c5f557d9b449",
+      "sizeBytes": 773
     },
-    "patches": [],
-    "recipeSha256": "230978b6f0b2c3d6c2faef8d9c86db04aa54868be76ca24c1085f71357d06f76",
+    "patches": [
+      {
+        "after": {
+          "sha256": "d198065f24ded628786614217097134dd28cfa3fd9a455ea188085feb8efd6fd",
+          "sizeBytes": 466
+        },
+        "before": {
+          "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+          "sizeBytes": 256
+        },
+        "path": "config/ftbquests/quests/chapter_groups.snbt"
+      },
+      {
+        "after": {
+          "sha256": "a45dfc3405700aa81ab3ad7fe275e00df413de4640cc4430290958d2ca4d67f2",
+          "sizeBytes": 6041
+        },
+        "before": {
+          "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+          "sizeBytes": 5409
+        },
+        "path": "config/ftbquests/quests/chapters/0188F23907D5B573.snbt"
+      },
+      {
+        "after": {
+          "sha256": "36954c2d955286ccd5eb63d0edaaf42dc0ea1044471322f7a8d56dd1d8f3ab94",
+          "sizeBytes": 9278
+        },
+        "before": {
+          "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+          "sizeBytes": 8024
+        },
+        "path": "config/ftbquests/quests/chapters/2445868387220123.snbt"
+      },
+      {
+        "after": {
+          "sha256": "0191e3f7036456f08fb82330e7aa6eb6aa4787143b5e35099265992111d50475",
+          "sizeBytes": 12167
+        },
+        "before": {
+          "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+          "sizeBytes": 10137
+        },
+        "path": "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt"
+      },
+      {
+        "after": {
+          "sha256": "72680c30d1873392f1a641dadb4b74e2f030f6a85e75a187fafe0cd09b70bf78",
+          "sizeBytes": 8979
+        },
+        "before": {
+          "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+          "sizeBytes": 8920
+        },
+        "path": "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt"
+      },
+      {
+        "after": {
+          "sha256": "9b50cee66f0c06e0cdacdb0ab103e6e3f0ed8f4235b971c12f46e4ed7cc008ca",
+          "sizeBytes": 1951
+        },
+        "before": {
+          "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+          "sizeBytes": 1890
+        },
+        "path": "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt"
+      },
+      {
+        "after": {
+          "sha256": "468d61e69122870e64a9df5772dfe68dc4c1dfb73c964b84af0c05a4b88997ed",
+          "sizeBytes": 26003
+        },
+        "before": {
+          "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+          "sizeBytes": 25098
+        },
+        "path": "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt"
+      },
+      {
+        "after": {
+          "sha256": "d858f55e8d281184788d76a47363bbd1268a3b5fb1535a753f8a27f029672a47",
+          "sizeBytes": 11593
+        },
+        "before": {
+          "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+          "sizeBytes": 11481
+        },
+        "path": "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt"
+      },
+      {
+        "after": {
+          "sha256": "df52c286e88e812749aae4a084c2b67f8439138a4c3175c742c8bec755a8705e",
+          "sizeBytes": 15910
+        },
+        "before": {
+          "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+          "sizeBytes": 15690
+        },
+        "path": "config/ftbquests/quests/chapters/artifacts.snbt"
+      },
+      {
+        "after": {
+          "sha256": "85f43b0bd6cb1972843e898bd094de9bda6de04c8b0afe921522daa48abce9a5",
+          "sizeBytes": 7709
+        },
+        "before": {
+          "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+          "sizeBytes": 6515
+        },
+        "path": "config/ftbquests/quests/chapters/escape_the_end.snbt"
+      },
+      {
+        "after": {
+          "sha256": "df11d71e9c826e49ac21b7d2681e37f65ea7e8fbf6ac5700eabbb369e74eb3d0",
+          "sizeBytes": 1580
+        },
+        "before": {
+          "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+          "sizeBytes": 1817
+        },
+        "path": "config/ftbquests/quests/chapters/info.snbt"
+      },
+      {
+        "after": {
+          "sha256": "70b78fc93eb6e24733cc4e51e0ed89e006077efcf379b9703efe25a47295a330",
+          "sizeBytes": 10372
+        },
+        "before": {
+          "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+          "sizeBytes": 8724
+        },
+        "path": "config/ftbquests/quests/chapters/music_discs_2.snbt"
+      },
+      {
+        "after": {
+          "sha256": "40f26126f48bcc28c65448b7d1229b2e4cd2f5ac9897c8c1fc0ff958b3ff9730",
+          "sizeBytes": 632
+        },
+        "before": {
+          "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+          "sizeBytes": 588
+        },
+        "path": "config/ftbquests/quests/data.snbt"
+      }
+    ],
+    "recipeSha256": "c6f948af9289638bf9bf3dcad4cc4764cc06e3df2c0d3d4c38b5a9db0e33966c",
     "requiredLauncherFeatures": [
       "preserve-steam-world-settings-v1"
     ]

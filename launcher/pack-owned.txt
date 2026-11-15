@@ -1,1 +1,16 @@
+config/ftbquests/quests/chapter_groups.snbt
+config/ftbquests/quests/chapters/0188F23907D5B573.snbt
+config/ftbquests/quests/chapters/2445868387220123.snbt
+config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt
+config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt
+config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt
+config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt
+config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt
+config/ftbquests/quests/chapters/artifacts.snbt
+config/ftbquests/quests/chapters/escape_the_end.snbt
+config/ftbquests/quests/chapters/info.snbt
+config/ftbquests/quests/chapters/music_discs_2.snbt
+config/ftbquests/quests/data.snbt
 config/log4j2.xml
+kubejs/assets/escape_end_quests/lang/en_us.json
+kubejs/assets/escape_end_quests/lang/ru_ru.json

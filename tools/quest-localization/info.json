@@ -1,0 +1,26 @@
+{
+  "chapter_groups.snbt": {
+    "ACT I - THE END": "АКТ I — КРАЙ",
+    "ACT II - THE NETHER": "АКТ II — НЕЗЕР",
+    "ACT III - OVEREND": "АКТ III — НАДКРАЙ (Overend)",
+    "Collections": "Коллекции"
+  },
+  "data.snbt": {
+    "Escape the End": "Побег из Края"
+  },
+  "chapters/info.snbt": {
+    "&dYou begin in the End, on one of the outer islands. Your goal is to survive and gradually make your way to the central island, where the dragon awaits. The outer islands are scattered far apart, so you'll need to leap between them, throw ender pearls, build bridges, and later glide — and even fly. To get you started, here are three ender pearls to help you reach the nearest tree. Good luck!": "&dВы начинаете в Крае, на одном из дальних островов. Ваша цель — выжить и постепенно добраться до центрального острова, где вас ждёт дракон Края. Острова разбросаны далеко друг от друга. Придётся перепрыгивать с острова на остров, бросать эндер-жемчуг и строить мосты, а позже вы научитесь планировать и даже летать. Возьмите три штуки пузырькового жемчуга, чтобы добраться до ближайшего дерева. Удачи!",
+    "&7Before facing the dragon, make sure you're prepared: gear up and build your strength, or the fight may end very quickly — and not in your favor...": "&7Перед боем с драконом запаситесь хорошим снаряжением и наберитесь сил. Иначе бой может закончиться очень быстро и не в вашу пользу…",
+    "Hotkeys:": "Клавиши управления",
+    "R - Roll": "R — Перекат",
+    "G - Quests": "G — Квесты",
+    "H - Party (complete quests together with friends; use the invite icon)": "H — Команда (нажмите значок приглашения, чтобы выполнять квесты вместе с друзьями)",
+    "J - Map Waypoint": "J — Новая метка на карте",
+    "C - Zoom": "C — Приближение",
+    "M - Map": "M — Карта мира",
+    "&7We recommend playing with the shaders already included in the modpack. They're configured for all custom dimensions, and the game simply looks and feels better with them.": "&7Рекомендуем играть с шейдерами, которые входят в сборку. Они уже настроены для всех добавленных измерений. С ними игра выглядит лучше и в неё приятнее играть.",
+    "&7This modpack is in Early Access, so bugs are possible. If something breaks, contact us on Boosty or Telegram.": "&7Сборка пока в раннем доступе, поэтому возможны ошибки. Если что-то сломалось, напишите нам в Boosty или Telegram.",
+    "Thank you for downloading the modpack and supporting its development!&r": "Спасибо, что скачали сборку и поддержали её разработку!&r",
+    "Information": "Информация"
+  }
+}

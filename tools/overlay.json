@@ -12,11 +12,1147 @@
     }
   ],
   "authorArchiveSha256": "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294",
+  "bookLocalization": [
+    {
+      "inputs": {
+        "config/ftbquests/quests/chapter_groups.snbt": {
+          "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+          "sizeBytes": 256
+        },
+        "config/ftbquests/quests/chapters/0188F23907D5B573.snbt": {
+          "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+          "sizeBytes": 5409
+        },
+        "config/ftbquests/quests/chapters/2445868387220123.snbt": {
+          "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+          "sizeBytes": 8024
+        },
+        "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt": {
+          "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+          "sizeBytes": 10137
+        },
+        "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt": {
+          "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+          "sizeBytes": 8920
+        },
+        "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt": {
+          "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+          "sizeBytes": 1890
+        },
+        "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt": {
+          "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+          "sizeBytes": 25098
+        },
+        "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt": {
+          "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+          "sizeBytes": 11481
+        },
+        "config/ftbquests/quests/chapters/artifacts.snbt": {
+          "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+          "sizeBytes": 15690
+        },
+        "config/ftbquests/quests/chapters/escape_the_end.snbt": {
+          "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+          "sizeBytes": 6515
+        },
+        "config/ftbquests/quests/chapters/info.snbt": {
+          "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+          "sizeBytes": 1817
+        },
+        "config/ftbquests/quests/chapters/music_discs_2.snbt": {
+          "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+          "sizeBytes": 8724
+        },
+        "config/ftbquests/quests/data.snbt": {
+          "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+          "sizeBytes": 588
+        },
+        "mods/ftb-library-forge-2001.2.13.jar": {
+          "fileId": 8226927,
+          "projectId": 404465,
+          "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+          "sizeBytes": 780558
+        },
+        "mods/ftb-quests-forge-2001.4.22.jar": {
+          "fileId": 8078538,
+          "projectId": 289412,
+          "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+          "sizeBytes": 1255469
+        },
+        "mods/kubejs-forge-2001.6.5-build.26.jar": {
+          "fileId": 8020595,
+          "projectId": 238086,
+          "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+          "sizeBytes": 1658792
+        },
+        "mods/legendarymonsters-2.2.3 MC 1.20.1.jar": {
+          "fileId": 8902349,
+          "projectId": 944035,
+          "sha256": "a90a3009e502ba4f235e5bd9a7493c2307e4060f0ee21fd02e62f9893912321c",
+          "sizeBytes": 44954907
+        },
+        "mods/phantasm-1.1.3.jar": {
+          "fileId": 8174822,
+          "projectId": 565254,
+          "sha256": "c88a29b3e37f469cc0a9afb25f6eb5f42942f4ab3210773078bca2aa5bf2dbc3",
+          "sizeBytes": 7006500
+        },
+        "mods/waystones-forge-1.20.1-14.1.20.jar": {
+          "fileId": 7682270,
+          "projectId": 245755,
+          "sha256": "5ecc6535596b5954f6293224be6b35805c64f4d4aedc2b9e32d9508dd529cabd",
+          "sizeBytes": 533738
+        }
+      },
+      "output": {
+        "sha256": "3923640057cd8cfd4ab1f653d175146e6869ae260a022fd9f5ab51b85b7e0253",
+        "sizeBytes": 18405
+      },
+      "path": "kubejs/assets/escape_end_quests/lang/en_us.json"
+    },
+    {
+      "inputs": {
+        "config/ftbquests/quests/chapter_groups.snbt": {
+          "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+          "sizeBytes": 256
+        },
+        "config/ftbquests/quests/chapters/0188F23907D5B573.snbt": {
+          "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+          "sizeBytes": 5409
+        },
+        "config/ftbquests/quests/chapters/2445868387220123.snbt": {
+          "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+          "sizeBytes": 8024
+        },
+        "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt": {
+          "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+          "sizeBytes": 10137
+        },
+        "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt": {
+          "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+          "sizeBytes": 8920
+        },
+        "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt": {
+          "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+          "sizeBytes": 1890
+        },
+        "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt": {
+          "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+          "sizeBytes": 25098
+        },
+        "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt": {
+          "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+          "sizeBytes": 11481
+        },
+        "config/ftbquests/quests/chapters/artifacts.snbt": {
+          "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+          "sizeBytes": 15690
+        },
+        "config/ftbquests/quests/chapters/escape_the_end.snbt": {
+          "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+          "sizeBytes": 6515
+        },
+        "config/ftbquests/quests/chapters/info.snbt": {
+          "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+          "sizeBytes": 1817
+        },
+        "config/ftbquests/quests/chapters/music_discs_2.snbt": {
+          "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+          "sizeBytes": 8724
+        },
+        "config/ftbquests/quests/data.snbt": {
+          "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+          "sizeBytes": 588
+        },
+        "mods/ftb-library-forge-2001.2.13.jar": {
+          "fileId": 8226927,
+          "projectId": 404465,
+          "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+          "sizeBytes": 780558
+        },
+        "mods/ftb-quests-forge-2001.4.22.jar": {
+          "fileId": 8078538,
+          "projectId": 289412,
+          "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+          "sizeBytes": 1255469
+        },
+        "mods/kubejs-forge-2001.6.5-build.26.jar": {
+          "fileId": 8020595,
+          "projectId": 238086,
+          "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+          "sizeBytes": 1658792
+        },
+        "mods/legendarymonsters-2.2.3 MC 1.20.1.jar": {
+          "fileId": 8902349,
+          "projectId": 944035,
+          "sha256": "a90a3009e502ba4f235e5bd9a7493c2307e4060f0ee21fd02e62f9893912321c",
+          "sizeBytes": 44954907
+        },
+        "mods/phantasm-1.1.3.jar": {
+          "fileId": 8174822,
+          "projectId": 565254,
+          "sha256": "c88a29b3e37f469cc0a9afb25f6eb5f42942f4ab3210773078bca2aa5bf2dbc3",
+          "sizeBytes": 7006500
+        },
+        "mods/waystones-forge-1.20.1-14.1.20.jar": {
+          "fileId": 7682270,
+          "projectId": 245755,
+          "sha256": "5ecc6535596b5954f6293224be6b35805c64f4d4aedc2b9e32d9508dd529cabd",
+          "sizeBytes": 533738
+        }
+      },
+      "output": {
+        "sha256": "c7aec4703db0492696a165bd485a6e9b669d655b06aa09f0bca548822065b4f3",
+        "sizeBytes": 22938
+      },
+      "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
+    }
+  ],
   "descriptorSha256": "776044931259cd918db0493a4b3baed95770fdb627faf79e251bc4be9c487505",
   "excludedDependencies": [
-    {"projectId": 849519, "fileId": 8281128},
-    {"projectId": 387365, "fileId": 4776657}
+    {
+      "fileId": 8281128,
+      "projectId": 849519
+    },
+    {
+      "fileId": 4776657,
+      "projectId": 387365
+    }
   ],
-  "patches": [],
+  "patches": [
+    {
+      "after": {
+        "sha256": "d198065f24ded628786614217097134dd28cfa3fd9a455ea188085feb8efd6fd",
+        "sizeBytes": 466
+      },
+      "before": {
+        "sha256": "996128452821f33d34bce3b9dd84ce7843645bf88d3eb79d160a7a447c32c952",
+        "sizeBytes": 256
+      },
+      "path": "config/ftbquests/quests/chapter_groups.snbt",
+      "replacements": [
+        {
+          "from": "\"Collections\"",
+          "to": "\"{lanminecraft.escape_end_quests.chapter_groups.9f9feade761d22f340a4}\""
+        },
+        {
+          "from": "\"ACT III - OVEREND\"",
+          "to": "\"{lanminecraft.escape_end_quests.chapter_groups.bced5790aef2a7c1474c}\""
+        },
+        {
+          "from": "\"ACT II - THE NETHER\"",
+          "to": "\"{lanminecraft.escape_end_quests.chapter_groups.93e4c5979f8db7f982cc}\""
+        },
+        {
+          "from": "\"ACT I - THE END\"",
+          "to": "\"{lanminecraft.escape_end_quests.chapter_groups.aa81d653dad769f4d4db}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "a45dfc3405700aa81ab3ad7fe275e00df413de4640cc4430290958d2ca4d67f2",
+        "sizeBytes": 6041
+      },
+      "before": {
+        "sha256": "613da1f21dc91d8cb072068024e3e7028812aa6ef85e9945bbf92aa8473bb170",
+        "sizeBytes": 5409
+      },
+      "path": "config/ftbquests/quests/chapters/0188F23907D5B573.snbt",
+      "replacements": [
+        {
+          "from": "\"Escape the Nether\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.a58293cce7368624e5d6}\""
+        },
+        {
+          "from": "\"Corpse Warlock\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.1a7e011946220430d1f0}\""
+        },
+        {
+          "from": "\"Servant of the Dark Cult\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.cdc3572f5b19df261f72}\""
+        },
+        {
+          "from": "\"An undead warlock of a pagan cult. One of the four guardians of the Nether.\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.5b894b4f0fabe39176b9}\""
+        },
+        {
+          "from": "\"The Way Home\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.29b32e8f0f0d86fbfe48}\""
+        },
+        {
+          "from": "\"Return Home\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.d2f9ecbf6cc99b23d1fa}\""
+        },
+        {
+          "from": "\"Ignite the Portal\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.376fc73d9578e3f5bd9d}\""
+        },
+        {
+          "from": "\"Build the portal frame and ignite it with the Ignitium Flint and Steel. Home at last... or is it?\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.b38c13caf8d4d1064d40}\""
+        },
+        {
+          "from": "\"Ignitium Flint and Steel\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.80d1102e25349de7dc2d}\""
+        },
+        {
+          "from": "\"Key to the Portal\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.fcd86c2cf3fa8655876c}\""
+        },
+        {
+          "from": "\"Forge a special flint and steel from Ignis's ingot — only it can ignite the portal home.\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.55cc69513825e8972b2e}\""
+        },
+        {
+          "from": "\"Ignis\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.2c0e5cb050bdccb32c50}\""
+        },
+        {
+          "from": "\"Lord of Flame\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.6a949fff4fb90252575b}\""
+        },
+        {
+          "from": "\"Once all four guardians have fallen, Ignis will awaken. He drops an Ignitium Ingot — the key to the path home.\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.3c1ed3651ab337a62ec3}\""
+        },
+        {
+          "from": "\"The Gauntlet\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.c0348a2f61ff993169c1}\""
+        },
+        {
+          "from": "\"Blazing Fist\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.833515212b371949bc85}\""
+        },
+        {
+          "from": "\"An enormous hand with a blazing eye. The last of the four guardians of the Nether.\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.96d217cf166c98e1ffc8}\""
+        },
+        {
+          "from": "\"Netherite Monstrosity\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.7092e494d5579fdb80f0}\""
+        },
+        {
+          "from": "\"Living Embodiment of Netherite\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.1eb68ca45ed54e8a19fc}\""
+        },
+        {
+          "from": "\"A massive golem forged from ancient metal. One of the four guardians of the Nether.\"",
+          "to": "\"{lanminecraft.escape_end_quests.0188f23907d5b573.5d0a44c923313313d4f4}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "36954c2d955286ccd5eb63d0edaaf42dc0ea1044471322f7a8d56dd1d8f3ab94",
+        "sizeBytes": 9278
+      },
+      "before": {
+        "sha256": "0603aa240deb96d2266f9c525cde80269bdbc69d6fe15f8cfed87f67c75e6242",
+        "sizeBytes": 8024
+      },
+      "path": "config/ftbquests/quests/chapters/2445868387220123.snbt",
+      "replacements": [
+        {
+          "from": "\"The End?\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.30132684ac208f3d873a}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"True Home\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.2445868387220123.a0020819dbff4c867bd0}\""
+        },
+        {
+          "from": "\"True Home\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.a0020819dbff4c867bd0}\""
+        },
+        {
+          "from": "\"True Ending\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.34b6ec93863eabd28060}\""
+        },
+        {
+          "from": "\"The Heart of the End has fallen. Return to the real, living world. You're home.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.1d4f7ffb16bdeafc9ce8}\""
+        },
+        {
+          "from": "\"Heart of the End\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.8f061400891334de4b9b}\""
+        },
+        {
+          "from": "\"Final Boss\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.a1a1ad1a0eb486d66db7}\""
+        },
+        {
+          "from": "\"Use the Eye to summon and defeat the Heart of the End. Only then will the path home open.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.afbc994364a2b8b4b48d}\""
+        },
+        {
+          "from": "\"Eye of the Unknown\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.0170472199871a71c04a}\""
+        },
+        {
+          "from": "\"Key to the Heart\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.1a1b9c1a8877d8518267}\""
+        },
+        {
+          "from": "\"Use the drops from every Lord of the Cataclysm, along with those of the Wither and Warden, to craft the Eye of the Unknown — the key to summoning the Heart of the End.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.264106ae8768f4ee9369}\""
+        },
+        {
+          "from": "\"Warden\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.81258b7c45d5e6c99bf2}\""
+        },
+        {
+          "from": "\"Guardian of Darkness\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.700f9220d95975fdf370}\""
+        },
+        {
+          "from": "\"Descend into the Deep Dark and defeat the Warden. Its drop is needed to craft the Eye.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.4c4aabdaf9e9a748a277}\""
+        },
+        {
+          "from": "\"Wither\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.cfb7f602aa54a0627eca}\""
+        },
+        {
+          "from": "\"Ancient Horror\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.27b0f7177e4ecfb58f24}\""
+        },
+        {
+          "from": "\"Summon and defeat the Wither. Its Nether Star is needed to craft the Eye.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.7410595ef1a39c5a0f7c}\""
+        },
+        {
+          "from": "\"The Harbinger\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.17b3c6267438314bf51f}\""
+        },
+        {
+          "from": "\"Harbinger of the End\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.bd97ddf8338f4f2f3313}\""
+        },
+        {
+          "from": "\"The mightiest of the Lords of the Cataclysm.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.9d841b6c5fb89cfd2d40}\""
+        },
+        {
+          "from": "\"Ancient Remnant\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.22b77af01c6aaed3c80c}\""
+        },
+        {
+          "from": "\"Shard of Antiquity\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.6e4624af4de56f82fb4f}\""
+        },
+        {
+          "from": "\"An awakened guardian of an ancient citadel.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.a98fb241050f98300dd4}\""
+        },
+        {
+          "from": "\"Maledictus\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.35aba87d27906de39aab}\""
+        },
+        {
+          "from": "\"The Cursed Pharaoh\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.f0b0968cf60f62e26112}\""
+        },
+        {
+          "from": "\"An ancient evil from cursed pyramids.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.6706ba0f40762559b12d}\""
+        },
+        {
+          "from": "\"Scylla\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.6a5cfa3e6a632019ba00}\""
+        },
+        {
+          "from": "\"Voice of the Storm\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.a385167af9b9b5f9f437}\""
+        },
+        {
+          "from": "\"Mistress of storms and lightning.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.c49a0b9231743f765863}\""
+        },
+        {
+          "from": "\"The Leviathan\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.3fbdee448627f4743737}\""
+        },
+        {
+          "from": "\"Lord of the Depths\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.525f340aa54d7cac725f}\""
+        },
+        {
+          "from": "\"A colossal sea horror from sunken cities.\"",
+          "to": "\"{lanminecraft.escape_end_quests.2445868387220123.296ce80d248bc28be552}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "0191e3f7036456f08fb82330e7aa6eb6aa4787143b5e35099265992111d50475",
+        "sizeBytes": 12167
+      },
+      "before": {
+        "sha256": "93d90e57f9f3705094be8f417d227eb44b00e8b34ceb1b1b5bd90309d585d08d",
+        "sizeBytes": 10137
+      },
+      "path": "config/ftbquests/quests/chapters/29B19CEEAF95EA9D.snbt",
+      "replacements": [
+        {
+          "from": "\t]\r\n\ttitle: \"Endermen\"",
+          "to": "\t]\r\n\ttitle: \"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.ae1f71701f36e3f03ac3}\""
+        },
+        {
+          "from": "\"Windswept Hills Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.efba9227a3e732c935d8}\""
+        },
+        {
+          "from": "\"Kill: Windswept Hills Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.2591b0b989e4adc488ba}\""
+        },
+        {
+          "from": "\"Flower Fields Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.481ca58ccca595a7f704}\""
+        },
+        {
+          "from": "\"Kill: Flower Fields Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.6d3756bbab8c06bc3b05}\""
+        },
+        {
+          "from": "\"Warped Forest Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.fb395e9f53ea0cadb362}\""
+        },
+        {
+          "from": "\"Kill: Warped Forest Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.d60dde87ebf4aae31bf8}\""
+        },
+        {
+          "from": "\"Desert Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.4f0f7f47e16f657472d4}\""
+        },
+        {
+          "from": "\"Kill: Desert Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.66981922c4f4ba2c9cd5}\""
+        },
+        {
+          "from": "\"Swamp Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.1ab3a0068303ca091ea1}\""
+        },
+        {
+          "from": "\"Kill: Swamp Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.d15f57fbf83d06cb12fc}\""
+        },
+        {
+          "from": "\"Dark Oak Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.b91b55228312f305458e}\""
+        },
+        {
+          "from": "\"Kill: Dark Oak Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.202d9e5b69308c11c298}\""
+        },
+        {
+          "from": "\"Soul Sand Valley Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.d4df02705d2d7c3b757b}\""
+        },
+        {
+          "from": "\"Kill: Soul Sand Valley Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.3dfb396a7dacb02ed4c9}\""
+        },
+        {
+          "from": "\"Crimson Forest Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.0e5aebc106b42a0fd108}\""
+        },
+        {
+          "from": "\"Kill: Crimson Forest Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.8fab52c16e081433b209}\""
+        },
+        {
+          "from": "\"Snowy Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.a8d03b0bcb0a1fb7e202}\""
+        },
+        {
+          "from": "\"Kill: Snowy Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.8568c4d13a3a210f746f}\""
+        },
+        {
+          "from": "\"Coral Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.b455ed60f40249e196be}\""
+        },
+        {
+          "from": "\"Kill: Coral Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.ad211a84f5b95d8dab98}\""
+        },
+        {
+          "from": "\"Savanna Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.f7559be5079c80b3ac94}\""
+        },
+        {
+          "from": "\"Kill: Savanna Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.7e908d184182601ac6bc}\""
+        },
+        {
+          "from": "\"Badlands Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.6e6727465cb786cd9c4f}\""
+        },
+        {
+          "from": "\"Kill: Badlands Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.1fd49190f2cdf4f04d85}\""
+        },
+        {
+          "from": "\"Nether Wastes Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.0ea964f2b53349d97c17}\""
+        },
+        {
+          "from": "\"Kill: Nether Wastes Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.0f9abf42284d3929b4ad}\""
+        },
+        {
+          "from": "\"Cave Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.3b2b031bb74f93a06219}\""
+        },
+        {
+          "from": "\"Kill: Cave Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.51a097bce040d58b5a8a}\""
+        },
+        {
+          "from": "\"Mushroom Fields Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.9de5632b6e14d313067e}\""
+        },
+        {
+          "from": "\"Kill: Mushroom Fields Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.51fb4bca35ca85a2826d}\""
+        },
+        {
+          "from": "\"End Islands Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.a4711eb68735ea6e5a82}\""
+        },
+        {
+          "from": "\"Kill: End Islands Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.41848ce29a3ce669ca7d}\""
+        },
+        {
+          "from": "\"Ice Spikes Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.ab7ec312f9a111b39ec8}\""
+        },
+        {
+          "from": "\"Kill: Ice Spikes Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.658613e963e5bd2e0d03}\""
+        },
+        {
+          "from": "\"End Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.6a173d28fba68812f69d}\""
+        },
+        {
+          "from": "\"Kill: End Enderman\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.1987b92bb4ea5b5c626a}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"Endermen\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.ae1f71701f36e3f03ac3}\""
+        },
+        {
+          "from": "\"Endermen\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.ae1f71701f36e3f03ac3}\""
+        },
+        {
+          "from": "\t\t\tsubtitle: \"All Enderman Variants\"",
+          "to": "\t\t\tsubtitle: \"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.6fd3a9a49f0e5c4468a6}\""
+        },
+        {
+          "from": "\"All Enderman Variants\"",
+          "to": "\"{lanminecraft.escape_end_quests.29b19ceeaf95ea9d.6fd3a9a49f0e5c4468a6}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "72680c30d1873392f1a641dadb4b74e2f030f6a85e75a187fafe0cd09b70bf78",
+        "sizeBytes": 8979
+      },
+      "before": {
+        "sha256": "9de750f156f0a50fd05874b010baea0343a4751eab2ece84a001d28bf9cd95b0",
+        "sizeBytes": 8920
+      },
+      "path": "config/ftbquests/quests/chapters/2A5472DCE487F9C5.snbt",
+      "replacements": [
+        {
+          "from": "\"Progression\"",
+          "to": "\"{lanminecraft.escape_end_quests.2a5472dce487f9c5.f193d07c37765ecb1de9}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "9b50cee66f0c06e0cdacdb0ab103e6e3f0ed8f4235b971c12f46e4ed7cc008ca",
+        "sizeBytes": 1951
+      },
+      "before": {
+        "sha256": "2be84b9870b4fe5ba29ae170b5b11ed690ab9788df1ead4a13daa83261feee88",
+        "sizeBytes": 1890
+      },
+      "path": "config/ftbquests/quests/chapters/53B30A1ABDA371A1.snbt",
+      "replacements": [
+        {
+          "from": "\"Awakening\"",
+          "to": "\"{lanminecraft.escape_end_quests.53b30a1abda371a1.10988fa4836dec393a03}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "468d61e69122870e64a9df5772dfe68dc4c1dfb73c964b84af0c05a4b88997ed",
+        "sizeBytes": 26003
+      },
+      "before": {
+        "sha256": "eb8854f5fe98cb1d8ea00cd602ff9f06f4e36230ffa825fe530c73f8cafbf81a",
+        "sizeBytes": 25098
+      },
+      "path": "config/ftbquests/quests/chapters/6838ED9C4FC00365.snbt",
+      "replacements": [
+        {
+          "from": "\"First Steps\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.a07a7da3d0936e98ea4b}\""
+        },
+        {
+          "from": "\"Ender Anchor\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.1bf3b7f78a3083f7752d}\""
+        },
+        {
+          "from": "\"Use ender pearl!\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.132354b837f441a6b57a}\""
+        },
+        {
+          "from": "\"Enchanting Table\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.8b421996cc3f8ac596e9}\""
+        },
+        {
+          "from": "\"Find a Village\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.f9fb8cc68c13c9f2e386}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"Find an End City\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.6838ed9c4fc00365.8ec0d17924407629c648}\""
+        },
+        {
+          "from": "\"Find an End City\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.8ec0d17924407629c648}\""
+        },
+        {
+          "from": "\"Hammer\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.c157cbf647f56e730a08}\""
+        },
+        {
+          "from": "\"Any Hammer\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.f87483e30a3c25619dbe}\""
+        },
+        {
+          "from": "\"End Stone Waystone\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.59c54aacd5acfba321a6}\""
+        },
+        {
+          "from": "\"End Stone Smelter\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.3853ca8777991610445f}\""
+        },
+        {
+          "from": "\"End Stone Furnace\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.4a07b6664157132fc98d}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"Crafting Table\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.6838ed9c4fc00365.aeb29223319b5b68a9ed}\""
+        },
+        {
+          "from": "\"Crafting Table\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.aeb29223319b5b68a9ed}\""
+        },
+        {
+          "from": "\"Bare Essentials\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.c4ee940dda0312d2199a}\""
+        },
+        {
+          "from": "\"Log\"",
+          "to": "\"{lanminecraft.escape_end_quests.6838ed9c4fc00365.21e49eb2b299c9f7503a}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "d858f55e8d281184788d76a47363bbd1268a3b5fb1535a753f8a27f029672a47",
+        "sizeBytes": 11593
+      },
+      "before": {
+        "sha256": "6d23fdeb019dfed1b0cb08f5a3e27b48374e57adeb879e3ce2cd9c7533d4c5fa",
+        "sizeBytes": 11481
+      },
+      "path": "config/ftbquests/quests/chapters/6DFEC95F5BD74F87.snbt",
+      "replacements": [
+        {
+          "from": "\"Exotic Delicacies\"",
+          "to": "\"{lanminecraft.escape_end_quests.6dfec95f5bd74f87.35527c0660ca953ad530}\""
+        },
+        {
+          "from": "\"Food Master\"",
+          "to": "\"{lanminecraft.escape_end_quests.6dfec95f5bd74f87.185a21d16ed80bb168ea}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "df52c286e88e812749aae4a084c2b67f8439138a4c3175c742c8bec755a8705e",
+        "sizeBytes": 15910
+      },
+      "before": {
+        "sha256": "371b5b38634bd919a308fb71ea7232a5744b2f59579ac6e467624040f3b16ee0",
+        "sizeBytes": 15690
+      },
+      "path": "config/ftbquests/quests/chapters/artifacts.snbt",
+      "replacements": [
+        {
+          "from": "\"Artifacts\"",
+          "to": "\"{lanminecraft.escape_end_quests.artifacts.314ae71b8c8dc9c952f0}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"Artifact Collection\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.artifacts.a506d9f3893b8bdc10d9}\""
+        },
+        {
+          "from": "\"Artifact Collection\"",
+          "to": "\"{lanminecraft.escape_end_quests.artifacts.a506d9f3893b8bdc10d9}\""
+        },
+        {
+          "from": "\t\t\tsubtitle: \"Collect all 44 artifacts\"",
+          "to": "\t\t\tsubtitle: \"{lanminecraft.escape_end_quests.artifacts.56df1485de082a47174f}\""
+        },
+        {
+          "from": "\"Collect all 44 artifacts\"",
+          "to": "\"{lanminecraft.escape_end_quests.artifacts.56df1485de082a47174f}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "85f43b0bd6cb1972843e898bd094de9bda6de04c8b0afe921522daa48abce9a5",
+        "sizeBytes": 7709
+      },
+      "before": {
+        "sha256": "c14f0de6d37941a6b96aca276c239d4d4294c73fdf0fda1f3c8f23f094a5c65e",
+        "sizeBytes": 6515
+      },
+      "path": "config/ftbquests/quests/chapters/escape_the_end.snbt",
+      "replacements": [
+        {
+          "from": "\"Escape the End\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.25980a53e2005587b339}\""
+        },
+        {
+          "from": "\"Into the Portal\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.3c78abaa385b9496bbca}\""
+        },
+        {
+          "from": "\"Enter the Portal\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.e592e1148b289ec74a9f}\""
+        },
+        {
+          "from": "\"Into the Next Dimension\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.60f3c5ee598de71d61ac}\""
+        },
+        {
+          "from": "\"Jump into the portal and step into the next dimension.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.9f9b76621ff76f3ed86f}\""
+        },
+        {
+          "from": "\"Ender Dragon\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.4573560c96e59ae415a2}\""
+        },
+        {
+          "from": "\"Kill the Ender Dragon\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.9bfbfbc4f34a738587d2}\""
+        },
+        {
+          "from": "\"The Final Guardian\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.ae20eb8a0fe4ae6fda4d}\""
+        },
+        {
+          "from": "\"Face the Ender Dragon.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.7a62ecdd30da641e8104}\""
+        },
+        {
+          "from": "\"Ender Guardian\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.245ee1e81d9e6c0d7106}\""
+        },
+        {
+          "from": "\"Kill Ender Guardian\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.a9dab4e323fe3b34233a}\""
+        },
+        {
+          "from": "\"The Last Guardian\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.996ac008ab3115fe1d65}\""
+        },
+        {
+          "from": "\"An ancient Guardian of the End.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.1037529aeccd62819f61}\""
+        },
+        {
+          "from": "\"Obsidilith\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.70d4a25c35b9088ff1c2}\""
+        },
+        {
+          "from": "\"Kill Obsidilith\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.9dd15a6864b6aaac38f3}\""
+        },
+        {
+          "from": "\"Ancient Obsidian Guardian\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.9f74638d102892ec15f3}\""
+        },
+        {
+          "from": "\"Awakens at an obsidian altar.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.46ebc2b6ae0c43083524}\""
+        },
+        {
+          "from": "\"Shulker Mimic\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.6669bb93bcc333f8c511}\""
+        },
+        {
+          "from": "\"Kill Shulker Mimic\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.020128f41f8cc5ce51af}\""
+        },
+        {
+          "from": "\"The Chest That Bites\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.acce27202cd0e169fa2c}\""
+        },
+        {
+          "from": "\"A giant mimic shulker.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.70fdc613eccb83f12e54}\""
+        },
+        {
+          "from": "\"Endersent\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.6f516f4596619f166cbe}\""
+        },
+        {
+          "from": "\"Kill Endersent\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.b46983a621a52a6b9b27}\""
+        },
+        {
+          "from": "\"Guardian of the Chorus Forests\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.b4665df91646fa9b750b}\""
+        },
+        {
+          "from": "\"The first of four bosses.\"",
+          "to": "\"{lanminecraft.escape_end_quests.escape_the_end.67e9884489b203943408}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "df11d71e9c826e49ac21b7d2681e37f65ea7e8fbf6ac5700eabbb369e74eb3d0",
+        "sizeBytes": 1580
+      },
+      "before": {
+        "sha256": "c1a32df7148ddcea19b7e59981f4610e2243dcace48752f7c0ab9eb421221d16",
+        "sizeBytes": 1817
+      },
+      "path": "config/ftbquests/quests/chapters/info.snbt",
+      "replacements": [
+        {
+          "from": "\t}]\r\n\ttitle: \"Information\"",
+          "to": "\t}]\r\n\ttitle: \"{lanminecraft.escape_end_quests.info.1cb0ba125f84c982b00b}\""
+        },
+        {
+          "from": "\"Information\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.1cb0ba125f84c982b00b}\""
+        },
+        {
+          "from": "\"Thank you for downloading the modpack and supporting its development!&r\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.e25c4421b6fda3ac251b}\""
+        },
+        {
+          "from": "\"&7This modpack is in Early Access, so bugs are possible. If something breaks, contact us on Boosty or Telegram.\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.32ddc68e60dae378e9c1}\""
+        },
+        {
+          "from": "\"&7We recommend playing with the shaders already included in the modpack. They're configured for all custom dimensions, and the game simply looks and feels better with them.\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.9037ca410112e7bf0735}\""
+        },
+        {
+          "from": "\"M - Map\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.8db8a5df860b6f939d5a}\""
+        },
+        {
+          "from": "\"C - Zoom\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.8b36a344df04b59a5e23}\""
+        },
+        {
+          "from": "\"J - Map Waypoint\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.4bde341f9c58c2e1f139}\""
+        },
+        {
+          "from": "\"H - Party (complete quests together with friends; use the invite icon)\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.4310d4e97f38e7699d6d}\""
+        },
+        {
+          "from": "\"G - Quests\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.e8e6a59041303b6f33bb}\""
+        },
+        {
+          "from": "\"R - Roll\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.032dc6e285c1c25b1a0e}\""
+        },
+        {
+          "from": "\"Hotkeys:\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.2a114f911adf6e8f6a06}\""
+        },
+        {
+          "from": "\"&7Before facing the dragon, make sure you're prepared: gear up and build your strength, or the fight may end very quickly — and not in your favor...\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.981d50b2c02fe1f7136c}\""
+        },
+        {
+          "from": "\"&dYou begin in the End, on one of the outer islands. Your goal is to survive and gradually make your way to the central island, where the dragon awaits. The outer islands are scattered far apart, so you'll need to leap between them, throw ender pearls, build bridges, and later glide — and even fly. To get you started, here are three ender pearls to help you reach the nearest tree. Good luck!\"",
+          "to": "\"{lanminecraft.escape_end_quests.info.5915ae9d73e762b66f4f}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "70b78fc93eb6e24733cc4e51e0ed89e006077efcf379b9703efe25a47295a330",
+        "sizeBytes": 10372
+      },
+      "before": {
+        "sha256": "7a122706d44c8ac873695c62548395a312c1b95e0f38a8faed5d8332bc05d68b",
+        "sizeBytes": 8724
+      },
+      "path": "config/ftbquests/quests/chapters/music_discs_2.snbt",
+      "replacements": [
+        {
+          "from": "\"Music Discs\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.e9a52770382682837c9b}\""
+        },
+        {
+          "from": "\"Abruption\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.b236e86edd2e36efc529}\""
+        },
+        {
+          "from": "\"Possessed Paladin\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.553a61306ea216da5573}\""
+        },
+        {
+          "from": "\"Obliterator\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.fd090f63d2000fa6820f}\""
+        },
+        {
+          "from": "\"Advance\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.775988890d65203232ef}\""
+        },
+        {
+          "from": "\"Strange and Alien\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.70fc9d91b52bb1c24af9}\""
+        },
+        {
+          "from": "\"Grasping at Stars\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.b59e70180c25b2148252}\""
+        },
+        {
+          "from": "\"Eo Dracona\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.a9a11faeec21b355fa8c}\""
+        },
+        {
+          "from": "\"Endseeker\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.77cb863f675684b72261}\""
+        },
+        {
+          "from": "\"relic\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.942c59c72bf62ed73362}\""
+        },
+        {
+          "from": "\"pigstep\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.449b13852e41d7d0cd78}\""
+        },
+        {
+          "from": "\"5\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.ef2d127de37b942baad0}\""
+        },
+        {
+          "from": "\"otherside\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.46ce6755080defb0b508}\""
+        },
+        {
+          "from": "\"wait\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.716ecabb45ac6a88a049}\""
+        },
+        {
+          "from": "\"11\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.4fc82b26aecb47d2868c}\""
+        },
+        {
+          "from": "\"ward\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.96b8f576c788b75e5918}\""
+        },
+        {
+          "from": "\"strad\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.48621e764b76a291407e}\""
+        },
+        {
+          "from": "\"stal\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.ed1c788677a0150bc721}\""
+        },
+        {
+          "from": "\"mellohi\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.51f9859e0bca34f669df}\""
+        },
+        {
+          "from": "\"mall\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.029d33cff213147256c2}\""
+        },
+        {
+          "from": "\"far\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.512eea46ceb3921dff43}\""
+        },
+        {
+          "from": "\"chirp\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.94b4a9f92e452b538dfc}\""
+        },
+        {
+          "from": "\"blocks\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.2a12da17d27cd05ab0f3}\""
+        },
+        {
+          "from": "\"cat\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.77af778b51abd4a3c51c}\""
+        },
+        {
+          "from": "\"13\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.3fdba35f04dc8c462986}\""
+        },
+        {
+          "from": "\t\t\t}]\r\n\t\t\ttitle: \"Music Disc Collection\"",
+          "to": "\t\t\t}]\r\n\t\t\ttitle: \"{lanminecraft.escape_end_quests.music_discs_2.20a069efba82a7f57831}\""
+        },
+        {
+          "from": "\"Music Disc Collection\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.20a069efba82a7f57831}\""
+        },
+        {
+          "from": "\t\t\tsubtitle: \"Collect every music disc from the End\"",
+          "to": "\t\t\tsubtitle: \"{lanminecraft.escape_end_quests.music_discs_2.db10fa01b41aedcf2970}\""
+        },
+        {
+          "from": "\"Collect every music disc from the End\"",
+          "to": "\"{lanminecraft.escape_end_quests.music_discs_2.db10fa01b41aedcf2970}\""
+        }
+      ]
+    },
+    {
+      "after": {
+        "sha256": "40f26126f48bcc28c65448b7d1229b2e4cd2f5ac9897c8c1fc0ff958b3ff9730",
+        "sizeBytes": 632
+      },
+      "before": {
+        "sha256": "6f276b4176a965625a4b1b3538ecf80e32c719f9fd9bcf2d7b011d1f64ec34dc",
+        "sizeBytes": 588
+      },
+      "path": "config/ftbquests/quests/data.snbt",
+      "replacements": [
+        {
+          "from": "\"Escape the End\"",
+          "to": "\"{lanminecraft.escape_end_quests.data.25980a53e2005587b339}\""
+        }
+      ]
+    }
+  ],
   "schemaVersion": 1
 }

@@ -69,6 +69,7 @@ jobs:
             'https://edge.forgecdn.net/files/9001/599/Escape%20The%20End-0.1.zip'
           echo "af7be8b4042f40f6839ada6b526803b4d4d06cee8955b2a3daead55283839294  $author" | sha256sum --check
           python3 -B "$pack/tools/network_logging_policy.py" verify --pack "$pack"
+          python3 -B "$pack/tools/localize_quests.py" verify "$author"
           python3 -B tools/PackData/CurseForge/release_overlay.py stage --pack-source "$pack" \
             --locked --client-archive "$author" --output "$run/stage"
           if [[ '${{ inputs.prepare_only }}' == 'true' ]]; then exit 0; fi
@@ -77,15 +78,18 @@ jobs:
           python3 -B tools/PackData/CurseForge/release_overlay.py verify --pack-source "$pack" \
             --stage "$run/stage" --manifest "$run/release/pack-manifest.json"
           sha256sum "$run/release/pack-manifest.json"
-      - name: Publish the verified first release
+      - name: Publish the verified release
         if: ${{ !inputs.prepare_only }}
         shell: bash
         run: |
           set -euo pipefail
-          release="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release/release"
+          run="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release"
+          release="$run/release"
           notes="$RUNNER_TEMP/escape-release-notes.md"
           {
             echo 'Escape The End 0.1 от Rainline для Minecraft 1.20.1, Forge 47.4.10 и Java 17.'
+            echo
+            echo 'Выберите русский язык в настройках Minecraft, чтобы читать квестбук FTB Quests на русском.'
             echo
             echo "Исходники и квитанции сборки доступны в [ревизии $GITHUB_SHA](https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA)."
             echo
@@ -95,13 +99,8 @@ jobs:
               cat NOTICE.md
             fi
           } > "$notes"
-          gh release create pack-latest --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-            --draft --title 'Escape The End' --notes-file "$notes"
-          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release"/assets/*
-          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" NOTICE.md licenses/*.txt
-          gh release upload pack-latest --repo "$GITHUB_REPOSITORY" "$release/pack-manifest.json"
-          gh release edit pack-latest --repo "$GITHUB_REPOSITORY" --draft=false
-      - name: Download and verify every public asset
+          python3 -B tools/publish_pack.py "$release" "$notes" NOTICE.md licenses/*.txt
+      - name: Download and verify every asset for the published revision
         if: ${{ !inputs.prepare_only }}
         env:
           PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
@@ -109,10 +108,11 @@ jobs:
         run: |
           set -euo pipefail
           run="$GITHUB_WORKSPACE/launcher-tools/artifacts/agent-runs/escape-the-end-release"
-          extra=(--extra-asset NOTICE.md)
-          for license in licenses/*.txt; do extra+=(--extra-asset "$license"); done
+          extra=()
+          for notice in "$run"/public-notices/*; do extra+=(--extra-asset "$notice"); done
           python3 -B tools/verify_public_assets.py --expected-manifest "$run/release/pack-manifest.json" \
-            --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run" "${extra[@]}"
+            --repository "$GITHUB_REPOSITORY" --pack-path 'Escape The End' --scratch "$run" \
+            --allow-previous-assets "${extra[@]}"
 
   verify-public-install:
     needs: publish

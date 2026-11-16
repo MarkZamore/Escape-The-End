@@ -208,6 +208,29 @@
       "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
     }
   ],
+  "clientScripts": {
+    "dependencies": [
+      {
+        "fileId": 8020595,
+        "projectId": 238086
+      },
+      {
+        "fileId": 6186971,
+        "projectId": 416294
+      },
+      {
+        "fileId": 5137938,
+        "projectId": 419699
+      }
+    ],
+    "files": [
+      {
+        "path": "kubejs/client_scripts/lanmc_multiplayer_warning.js",
+        "sha256": "0ff8a52d49b5df591ab51a67d0c6a7deeb2f1f79602552a8f2e9cb9f2673ff5d",
+        "sizeBytes": 198
+      }
+    ]
+  },
   "controlsPreset": {
     "input": {
       "sha256": "3039a05e63fd95063e4c95c6f2242911237ee80a155f213e77c8e4005b9f2e7c",

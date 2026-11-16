@@ -73,6 +73,7 @@ jobs:
           python3 -B "$pack/tools/keybinds/check_preset.py" --author-archive "$author"
           python3 -B tools/PackData/CurseForge/release_overlay.py stage --pack-source "$pack" \
             --locked --client-archive "$author" --output "$run/stage"
+          python3 -B "$pack/tools/verify_multiplayer_warning.py" "$run/stage/game"
           if [[ '${{ inputs.prepare_only }}' == 'true' ]]; then exit 0; fi
           python3 -B tools/PackData/CurseForge/stage_release.py --pack-source "$pack" \
             --stage "$run/stage" --revision "$GITHUB_SHA" --id "$PACK_ID" --output "$run/release"
@@ -92,6 +93,7 @@ jobs:
             echo
             echo 'Выберите русский язык в настройках Minecraft, чтобы читать квестбук FTB Quests на русском.'
             echo 'Раскладка клавиш доступна через кнопку «Пресет управления» в LANMinecraft.'
+            echo '«Сетевая игра» открывает список серверов сразу.'
             echo
             echo "Исходники и квитанции сборки доступны в [ревизии $GITHUB_SHA](https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA)."
             echo
@@ -123,7 +125,7 @@ jobs:
     timeout-minutes: 35
     env:
       LAUNCHER_SOURCE: 55aa6ae4ffb524c6fcdc564a3a34b9cc1a62dd0b
-      LAUNCHER_SHA256: 74e30ce982054e0937d2f3964731ccceee877f95eaf007e19d132244fcb84bb1
+      LAUNCHER_SHA256: 532edb7e2f626f8c175d2b88d47168429234fa2b7743f251b527b90501a3bcb1
       APPROVED_REVISION: ${{ inputs.verify_revision || github.sha }}
       PYTHONPATH: ${{ github.workspace }}/launcher-tools/tools/PackData/CurseForge
     steps:

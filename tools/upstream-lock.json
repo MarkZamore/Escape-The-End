@@ -2730,6 +2730,29 @@
         "path": "kubejs/assets/escape_end_quests/lang/ru_ru.json"
       }
     ],
+    "clientScripts": {
+      "dependencies": [
+        {
+          "fileId": 8020595,
+          "projectId": 238086
+        },
+        {
+          "fileId": 6186971,
+          "projectId": 416294
+        },
+        {
+          "fileId": 5137938,
+          "projectId": 419699
+        }
+      ],
+      "files": [
+        {
+          "path": "kubejs/client_scripts/lanmc_multiplayer_warning.js",
+          "sha256": "0ff8a52d49b5df591ab51a67d0c6a7deeb2f1f79602552a8f2e9cb9f2673ff5d",
+          "sizeBytes": 198
+        }
+      ]
+    },
     "controlsPreset": {
       "input": {
         "sha256": "3039a05e63fd95063e4c95c6f2242911237ee80a155f213e77c8e4005b9f2e7c",
@@ -2761,8 +2784,8 @@
       }
     ],
     "ownership": {
-      "sha256": "1c635fd7aadabac00e5b85ededb10f7f5f99ccefe068099410b78bd0d7a74758",
-      "sizeBytes": 802
+      "sha256": "92438a6baed956cf9ead8948c549bf981f9133f5a2ac6f5e7a9a097b16e3e841",
+      "sizeBytes": 853
     },
     "patches": [
       {
@@ -2909,7 +2932,7 @@
         "path": "config/ftbquests/quests/data.snbt"
       }
     ],
-    "recipeSha256": "c7b148c88d869abe146e1c254eb228838f867c7b6b888d1c8f078c351cfe84f2",
+    "recipeSha256": "a274e648d45abacf9095c520fa0be2eefebab7035b7d7d223c5ce16becec4bee",
     "requiredLauncherFeatures": [
       "preserve-steam-world-settings-v1"
     ]

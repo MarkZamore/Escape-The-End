@@ -11,6 +11,7 @@ config/ftbquests/quests/chapters/escape_the_end.snbt
 config/ftbquests/quests/chapters/info.snbt
 config/ftbquests/quests/chapters/music_discs_2.snbt
 config/ftbquests/quests/data.snbt
+config/lanminecraft/experimental-world-confirmation.jar
 config/log4j2.xml
 kubejs/assets/escape_end_quests/lang/en_us.json
 kubejs/assets/escape_end_quests/lang/ru_ru.json

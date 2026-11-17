@@ -2530,8 +2530,8 @@
       },
       {
         "path": "launcher/jvm-args.txt",
-        "sha256": "a1f3a734e672681e16e8db9a35ece57236720f99f95a85bac9eb2caac1e19d3c",
-        "sizeBytes": 44
+        "sha256": "6d1dd3ea430f376463bda0836f9b2cdcb5ee6d032c17b1fdf9100b647d5323d2",
+        "sizeBytes": 111
       }
     ],
     "bookLocalization": [
@@ -2784,8 +2784,8 @@
       }
     ],
     "ownership": {
-      "sha256": "92438a6baed956cf9ead8948c549bf981f9133f5a2ac6f5e7a9a097b16e3e841",
-      "sizeBytes": 853
+      "sizeBytes": 909,
+      "sha256": "1b3df37080b5980d81e99c2722bc13db890d96bef4cb8940859e54193455a9ad"
     },
     "patches": [
       {
@@ -2932,9 +2932,16 @@
         "path": "config/ftbquests/quests/data.snbt"
       }
     ],
-    "recipeSha256": "a274e648d45abacf9095c520fa0be2eefebab7035b7d7d223c5ce16becec4bee",
+    "recipeSha256": "168a81fd45f32ce094ba408521b08ed8a240614a43ef675edc8ec138ebc25b76",
     "requiredLauncherFeatures": [
       "preserve-steam-world-settings-v1"
+    ],
+    "supportFiles": [
+      {
+        "path": "config/lanminecraft/experimental-world-confirmation.jar",
+        "sizeBytes": 385299,
+        "sha256": "6db006392ebcfa6ce3cb5d21da8c8772eacfa388052e6e97bd5dd925734dd8bc"
+      }
     ]
   },
   "overrides": [
